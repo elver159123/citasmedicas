@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">citas medicas</string>
+    <string name="solicitar_cita">Solicitar Cita</string>
 </resources>

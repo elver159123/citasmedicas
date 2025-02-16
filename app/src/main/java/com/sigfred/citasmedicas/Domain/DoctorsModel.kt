@@ -13,11 +13,11 @@ data class DoctorsModel(
     val Exprience:Int=0,
     val Location:String="",
     val Mobile:String="",
-    val patiens:String="",
+    val Patiens:String="",
     val Rating:Double=0.0,
     val Site:String="",
 
-):Parcelable {
+    ):Parcelable {
     constructor(parcel: Parcel) : this(
         parcel.readString().toString(),
         parcel.readString().toString(),
@@ -44,7 +44,7 @@ data class DoctorsModel(
         parcel.writeInt(Exprience)
         parcel.writeString(Location)
         parcel.writeString(Mobile)
-        parcel.writeString(patiens)
+        parcel.writeString(Patiens)
         parcel.writeDouble(Rating)
         parcel.writeString(Site)
     }

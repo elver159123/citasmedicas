@@ -1,0 +1,30 @@
+{
+  "project_info": {
+    "project_number": "291607739382",
+    "firebase_url": "https://citas-medicas-f5e0b-default-rtdb.firebaseio.com",
+    "project_id": "citas-medicas-f5e0b",
+    "storage_bucket": "citas-medicas-f5e0b.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:291607739382:android:014a518806c7dfc82765d7",
+        "android_client_info": {
+          "package_name": "com.sigfred.citasmedicas"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAQ_ecpU-PrWMDVAS9_HtrFmo1_C1gCA6U"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

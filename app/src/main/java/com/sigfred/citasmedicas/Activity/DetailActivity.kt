@@ -17,6 +17,11 @@ class DetailActivity : BaseActivity2() {
         setContentView(binding.root)
 
         getBundle()
+
+        // Añadir el manejador para el botón de solicitar cita
+        binding.makeBtn.setOnClickListener {
+            navigateToAgendarCita()
+        }
     }
 
     private fun getBundle() {
@@ -30,12 +35,11 @@ class DetailActivity : BaseActivity2() {
                 bioTxt.text = doctor.Biography
                 addressTxt.text = doctor.Address
                 experienceTxt.text = "${doctor.Exprience} Years"
-                ratingTxt.text = doctor.Rating.toString() // ¿En lugar de `Picture`?
+                ratingTxt.text = doctor.Rating.toString()
 
                 backBtn.setOnClickListener {
                     finish()
                 }
-
 
                 websiteBtn.setOnClickListener {
                     val i = Intent(Intent.ACTION_VIEW, Uri.parse(doctor.Site))
@@ -77,5 +81,12 @@ class DetailActivity : BaseActivity2() {
         } ?: run {
             finish() // Cierra la actividad si el objeto es `null`
         }
+    }
+
+    private fun navigateToAgendarCita() {
+        // Pasa los datos del doctor (si es necesario) a AgendarCitaActivity
+        val intent = Intent(this, AgendarCita::class.java)
+        intent.putExtra("doctor", item) // Enviamos el objeto doctor
+        startActivity(intent)
     }
 }

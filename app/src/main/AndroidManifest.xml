@@ -12,33 +12,46 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CitasMedicas"
         tools:targetApi="31">
-        <activity
-            android:name=".Activity.TopDoctorsActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Activity.DetailActivity"
-            android:exported="false" />
-        <activity
-            android:name=".MainActivity3"
-            android:exported="false" />
+
+        <!-- IntroActivity es la primera en ejecutarse -->
         <activity
             android:name=".Activity.IntroActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <!-- Login después de la intro -->
+        <activity
+            android:name=".Activity.Login"
+            android:exported="true" />
+
+        <!-- Registro después del login si el usuario quiere registrarse -->
+        <activity
+            android:name=".Activity.Registro"
+            android:exported="true" />
+
+        <!-- MainActivity después del login o registro -->
         <activity
             android:name=".Activity.MainActivity"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+            android:exported="true" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
+        <!-- Otras actividades -->
+        <activity
+            android:name=".Activity.TopDoctorsActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Activity.DetailActivity"
+            android:exported="false" />
+
+        <!-- Actividad de agendar cita, colocada después de la actividad DetailActivity -->
+        <activity
+            android:name=".Activity.AgendarCita"
+            android:exported="false" />
+
     </application>
 
 </manifest>

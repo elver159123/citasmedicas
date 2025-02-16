@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Item de Explorar -->
+    <item
+        android:id="@+id/item_explorar"
+        android:title="Explorar"
+        android:icon="@drawable/ic_explorar"
+        app:showAsAction="ifRoom" />
+
+    <!-- Item de Lista de Deseos -->
+    <item
+        android:id="@+id/item_lista_deseos"
+        android:title="Lista de deseos"
+        android:icon="@drawable/ic_lista_deseos"
+        app:showAsAction="ifRoom" />
+
+    <!-- Item de Configuración -->
+    <item
+        android:id="@+id/item_configuracion"
+        android:title="Configuración"
+        android:icon="@drawable/ic_configuracion"
+        app:showAsAction="ifRoom" />
+
+    <!-- Item de Cuenta -->
+    <item
+        android:id="@+id/item_cuenta"
+        android:title="Cuenta"
+        android:icon="@drawable/ic_cuenta"
+        app:showAsAction="ifRoom" />
+
+</menu>
+

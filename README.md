@@ -58,6 +58,16 @@ com.sigfred.citasmedicas
 4. La aplicación carga los datos mediante **ViewModel** y **LiveData**, actualizando la UI dinámicamente.
 5. La información de los doctores se almacena en **Firebase**.
 
+##Imagenes de Funcionamiento
+
+## Capturas de pantalla
+![Pantalla de inicio](/imagenes/Image.png)
+![Pantalla de interfas](/imagenes/Imagen2.png)
+![Pantalla doctor](/imagenes/Imagen3.png)
+![Pantalla lista de doctores](/imagenes/Imagen4.png)
+![Pantalla compartir ](/imagenes/Imagen5.png)
+
+
 ## Autor
 **Andy Yanacallo**
 
